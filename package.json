@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:watch":"jest --watch",
     "build": "tsc",
     "watch": "tsc --watch",
-    "dev": "nodemon --watch dist --exec node dist/"
+    "dev": "nodemon --watch dist --exec node dist/",
+    "dev:test": "concurrently \"npm run watch\" \"npm run test:watch\""
   },
   "repository": {
     "type": "git",
