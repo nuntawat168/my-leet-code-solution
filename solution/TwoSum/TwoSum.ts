@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number[]}
  */
-function twoSum(nums: number[], target: number): number[] {
+export function twoSum(nums: number[], target: number): number[] {
     const hashMap: {[key: number]: number} = {};
     for( let i = 0; i < nums.length; i++) {  
         const diff = target - nums[i];
@@ -16,5 +16,3 @@ function twoSum(nums: number[], target: number): number[] {
 
     throw new Error('No two sum solution')
 };
-
-console.log(twoSum([2,7,11,15], 9));
