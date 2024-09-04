@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/nuntawat168/my-leet-code-solution#readme",
   "devDependencies": {
+    "@types/jest": "^29.5.12",
     "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
     "typescript": "^5.5.4"
   }
 }
